@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/downloadcard.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  
+ 
+<body>
+    <a href="index.html"><h2>Registration</h2></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <div class="download-form-container">
+                    <h1>Download Id Card</h1>
+                    <form id="download-form">
+                        <div class="mb-3">
+                            <label for="cnicInput" class="form-label">Cnic number</label>
+                            <input type="text" class="form-control" id="cnicInput" placeholder="CNIC">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100" id="Form-enable" >DOWNLOAD</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div id="card-display">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="head">
+    
+
+      <div id="mainForms">
+        <div class="contianer ">
+            <div class="row parent ">
+              <div class="col-sm-12 col-md-12 d-flex flex-wrap parent">
+                
+                <div class="col-xs-4 col-sm-8 col-md-6 main d-flex justify-content-center">
+                    <div class="idcard mt-4">
+                        <div>
+                            <h3 class="text-center mt-4 fw-bold text-primary">SMIT</h3>
+                        </div>
+                        <div>
+                            <h5 class="text-primary text-center"> SAYLANI MASS AND IT <br> TRAINING PROGRAM</h5>
+                        </div>
+        
+                            <div class="mt-2 idCardPic">
+                                <img id="stdImg" class="idCardPic" src="" alt="">
+                            </div>
+                            <div class="text-center mt-3 fw-bold fs-5">
+                                <p id="stdName">Ali Raza</p>
+                            </div>
+                            <div class="text-center mt-1">
+                                <p id="stdCourse">Web And Mobile App Development</p>
+                            </div>
+                            <div class="text-center fw-bold fs-5 mt-1">
+                                <p id="stdRollNum">WMA-137174</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-8 col-md-6 main d-flex justify-content-center">
+                    <div class="idcard mx-3 mt-4 mb-3">
+                        <div class="text-center mt-4">
+                            <label class="text-dark fw-bold" for="">Name:</label>
+                            <input id="stdCardName" class="cardInput" type="text" disabled="disabled">
+                        </div>
+                        <div class="text-center mt-2">
+                            <label class="text-dark fw-bold" for="">Father Name:</label>
+                            <input  class="cardInput" id="father-name-input" disabled="disabled" type="text">
+                        </div>
+                        <div class="text-center mt-2">
+                            <label class="text-dark fw-bold" for="">Cnic:</label>
+                            <input id="stdNic" class="cardInput" type="text" disabled="disabled">
+                        </div>
+                        <div class="text-center mt-2">
+                            <label class="text-dark fw-bold" for="">Course:</label>
+                            <input id="STDCourse" class="cardInput" type="text" disabled="disabled">
+                        </div>
+                        <div class="text-center mt-2">
+                            <img id="qrcode" src="https://tse1.mm.bing.net/th?id=OIP.-9N4K3Syg-OgbET8dgDwqAHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121" alt="">
+                            <p class= "mt-1 fw-bold note">Note: This card is for SMIT's premises
+                                only. If found please return to SMIT</p>
+                        </div>
+                        <div class="text-center mt-2">
+                            <input class="cardInput" type="text" disabled="disabled">
+                            <p class="text-center note fw-bold">Issuing authority</p>
+                        </div>
+                    </div>
+                </div>
+        
+              </div>
+              <div class="col-xs-4 col-sm-6 col-md-12">
+                <h1 class="fw-bold text-danger mt-3 mx-5">Instructions :</h1>
+                <ol class="instructions" type="1">
+                    <li> Please bring color print of this Admit/ID card</li>
+                    <li>Attestation of ID/Admit Card is extremely mandatory from SMIT</li>
+                    <li>No student will be allowed to enter in Entry Test without attestation of Admit/ID Card</li>
+                    <li>Bring CNIC/B-Form and Last qualification Marksheet/Certification. (both original) at the time
+                        of Attestation</li>
+                        <li>Address: Gulshan Campus (2nd Floor, Mumtaz Mobile Mall, Gulshan Chowrangi)/ A-25,
+                            saylani head office 4th floor, char minar chowrangi, bahadurabad.</li>
+                            <li>For further information please like & follow our Facebook Page:
+                                https://www.facebook.com/SaylaniMassITraining
+                               </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+            <div class="card-bottom-image">
+            <img src="th.jpeg" alt="" />
+            
+            </div>
+              <h5 class="text-center mt-5">Donate us : <br> https://www.saylaniwelfare.com</h5>
+              
+      </div>
+  <button class="btn btn-danger mt-5 fw-bold btn_print" id="downloadCardBtn">Download</button>
+     
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+
+    <script type="module" src="/id.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</body>
+
+</html>

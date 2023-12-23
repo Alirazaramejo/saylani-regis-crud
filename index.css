@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+#Form-enable {
+    background-color: #007bff; /* Blue color */
+    color: #ffffff; /* White text color */
+}
+
+/* Style for the disabled button */
+#Form-enable:disabled {
+    background-color: #6c757d; /* Gray color */
+    color: #ffffff; /* White text color */}
+.idcard{
+    height: 400px;
+    width: 300px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    margin-left: 2px;
+    /* margin: 2px 4px; */
+}
+.parent{
+    justify-content: space-around;
+}
+.idCardPic{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    /* background-color: blue; */
+    margin: auto;
+}
+.line{
+    width: 200px;
+    border-bottom: 2px solid black;
+}
+.cardInput{
+    width: 200px;
+    height: 20px;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: whitesmoke;
+}
+#father-name-input{
+    width: 150px !important;
+
+}
+.main{
+    border: 1px dashed;
+    border-top: none;
+  
+}
+#qrcode{
+    background-color: whitesmoke;
+}
+.note{
+    font-size: 12px;
+    margin: 2px 10px;
+}
+.instructions > li {
+    font-weight: bold;
+}
+.card-bottom-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
